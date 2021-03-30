@@ -1,0 +1,129 @@
+/* Basic styles */
+body {
+	font-family: "Raleway", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* Colors */
+:root {
+	--primary: #361999;
+	--secondary: #78fff1;
+	--accent: #ff6495;
+}
+
+/* Welcome */
+.welcomeHeaderDiv {
+	background-color: #361999;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.welcomeLogo {
+	display: block;
+	width: 200px;
+}
+
+.welcomeMenuUl {
+	list-style: none;
+	display: flex;
+}
+
+.welcomeMenuLi a {
+	margin: 10px;
+	text-decoration: none;
+	color: #78fff1;
+	text-transform: uppercase;
+}
+
+.welcomeMainDiv {
+	min-height: 500px;
+	background-image: url("./img/fivehotel.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcomeMainText {
+	font-size: 40px;
+	color: #361999;
+	background-color: #ffffffbb;
+	padding: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+/* Restaurant */
+.bg-food {
+	background: url(img/michael-browning-MtqG1lWcUw0-unsplash.jpg) no-repeat fixed center top;
+	min-height: 40vh;
+	background-size: cover;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wrapper h2 {
+	font-size: 2.5rem;
+}
+
+.wrapper > p:first-of-type {
+	width: 50%;
+	line-height: 1.6;
+	font-size: 1rem;
+}
+
+.img-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.5rem;
+}
+
+.card {
+	position: relative;
+}
+
+.text-content {
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-bottom: 0.3rem;
+	padding: 0 1.5rem;
+}
+
+.img-gallery i {
+	margin-right: 0.4rem;
+}
+
+/* Contact Form */
+
+#bodyContactForm {
+	padding-left: 12px;
+}
+
+.inputContactForm,
+#btnSubmitContactForm {
+	font-family: "Raleway", sans-serif;
+}
+
+#btnSubmitContactForm {
+	background: var(--accent);
+}
+
+textarea {
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+#conference {
+	display: flex;
+}
